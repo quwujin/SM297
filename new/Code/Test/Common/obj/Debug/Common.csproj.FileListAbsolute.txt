@@ -54,3 +54,14 @@ D:\源慧\SVN\平台项目\通用项目平台\Code\Test\Common\bin\Debug\NPOI.OO
 D:\源慧\SVN\平台项目\通用项目平台\Code\Test\Common\bin\Debug\NPOI.OpenXml4Net.dll
 D:\源慧\SVN\平台项目\通用项目平台\Code\Test\Common\bin\Debug\NPOI.OpenXmlFormats.dll
 D:\源慧\SVN\平台项目\通用项目平台\Code\Test\Common\bin\Debug\NPOI.xml
+E:\项目代码\士力架\new\Code\Test\Common\bin\Debug\Common.dll
+E:\项目代码\士力架\new\Code\Test\Common\bin\Debug\Common.pdb
+E:\项目代码\士力架\new\Code\Test\Common\bin\Debug\Db.dll
+E:\项目代码\士力架\new\Code\Test\Common\bin\Debug\Model.dll
+E:\项目代码\士力架\new\Code\Test\Common\bin\Debug\Db.pdb
+E:\项目代码\士力架\new\Code\Test\Common\bin\Debug\Model.pdb
+E:\项目代码\士力架\new\Code\Test\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+E:\项目代码\士力架\new\Code\Test\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+E:\项目代码\士力架\new\Code\Test\Common\obj\Debug\Common.csproj.CopyComplete
+E:\项目代码\士力架\new\Code\Test\Common\obj\Debug\Common.dll
+E:\项目代码\士力架\new\Code\Test\Common\obj\Debug\Common.pdb
