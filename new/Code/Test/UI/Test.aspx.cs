@@ -22,7 +22,7 @@ public partial class test : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
 
-        //ESLogMethod.ESLogInstance.Debug(null, "session不通过"); 
+        //ESLogMethod.ESLogInstance.Debug(null, "session不通过"); 测试提交
 
         //Response.Write(Common.DateTimeHelper.GetWeeks(4,2));
     }
