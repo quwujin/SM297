@@ -1,0 +1,18 @@
+﻿*
+{
+	margin:0;
+	padding:0;
+	
+}
+
+body 
+{
+	margin:0;
+	padding:0;
+	font-size:12px;
+	
+}
+
+.bai_title{ color:#fff; font-size:14px;}
+.td13 td{ font-size:14px;   padding:5px;}
+.inputs{ width:200px; height:30px; line-height:30px; border:1px solid #ccc;}

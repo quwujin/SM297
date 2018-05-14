@@ -1,0 +1,200 @@
+﻿body {
+    margin:0px;
+    font-family:'微软雅黑';
+    font-size:14px;
+}
+a{text-decoration:none;}
+
+
+.add a{height:20px; line-height:20px; background:#289FD9; color:#fff; width:100px; float:left; margin-right:10px; text-align:center; display:block; }
+
+.bai14{font-size:12px; color:#fff;}
+
+.bt{ height:30px; line-height:30px; color:#fff; background:#034582; }
+
+
+.box {
+    margin: 30px auto;
+    width: 95%;
+     
+}
+
+
+.button {
+
+     width:252px; 
+     line-height:34px; 
+     height:34px; 
+     background:url(../img/bt.png);
+     border:0;
+     color:#fff;
+     
+}
+
+.input_login {
+    width: 140px;
+    height: 22px;
+    line-height: 22px;
+    border: 0;
+}
+
+
+.biglist{height:25px; background:#ccc; color:#333;}
+
+.t{ 
+ 	background:#034582; 
+	color:#ffffff; 
+	cursor:pointer; 
+	font-weight:bold; 
+	width:100px; 
+	height:25px; 
+	margin-left:3px; 
+	line-height:25px; 
+	text-align:center; 
+	float:left;
+}
+.active{width:100px; 
+line-height:25px;
+ float:left;  
+ margin-left:5px; 
+ text-align:center; 
+ height:25px;
+ 
+  font-weight:bold;
+  text-decoration:none;
+  cursor:pointer;
+  color:#0099CC; 
+  background:#fff;!important;}
+  
+  
+  
+.page { width:98%;  margin:0px auto; font-size:12px;}
+.page a{  float:left;width:30px;  margin-left:2px; line-height:22px;  background:#026F8E; text-align:center;height:22px; color:#fff;}
+.page span{ float:left; width:auto; width:30px; text-align:center; margin-left:-2px; line-height:22px;  height:22px;background:#ccc; }
+.page a:hover{ background:#D8502A}
+
+
+.input{ line-height:25px; border:#CCCCCC 1px solid; background:#f5f5f5;
+}
+
+
+.menu a{ color:#999999; text-decoration:none; color:#026F8E; border:1px solid #026F8E;  padding:5px 15px;}
+.menu a:hover{ background:#006666; color:#fff;}
+
+
+
+
+.cooltable td { font-size:14px; border: 0px solid #D8DDE5; vertical-align:middle; padding: 2px 2px 2px 2px;
+	text-align: left;
+}
+.cooltable tr  { background:#f5f5f5;}
+.cooltable tr.odd  { background:#FFFFFF;}
+
+.cooltable tr.highlight { background:#FFF9E1;}
+.cooltable tr.selected  { background:#FFF9E1;}
+
+
+
+.leftmenu{ width: 180px; cursor:pointer; line-height:35px; height:35px; color:#666666; margin-right:2px;   margin-bottom:5px; text-align:right; border-bottom:1px solid #ccc; }
+ .leftmenu2{ width: 170px; line-height:35px; height:35px; background:#fff; margin-right:0; border:2px solid #06c; border-right:0; border-left:10px #289FD9 solid;    margin-bottom:5px; text-align:right;}
+ 
+ 
+ .bt{ background:#0099FF; height:25px; line-height:25px; border:0; width:80px;}
+
+
+.tdmenu td {
+    border: 1px solid #ccc;
+}
+
+
+.menulist {
+
+    width:96%;
+    height:35px;
+    line-height:35px; 
+    height:35px;
+    margin:0px auto;
+    
+    border-bottom:1px solid #ccc;
+}
+
+
+.menulist2 {
+
+    width:96%;
+    height:35px;
+    margin:0px auto;
+    line-height:35px; 
+     margin:0px auto;
+    height:35px;
+  
+}
+
+.menulist .titles {
+    width: 65%;
+    float:left;
+}
+
+
+.menulist2 .titles {
+    width: 65%;
+    float:left;
+    padding-left:30px;
+}
+
+
+.menulist .creates {
+    width: 35%;
+    float:right;
+    text-align:right;
+}
+
+.menulist2 .creates {
+    width: 35%;
+    float:right;
+    text-align:right;
+}
+
+
+
+.menulist img {
+    vertical-align: middle;
+    margin-right:3px;
+    
+}
+
+.menulist2 img {
+    vertical-align: middle;
+    margin-right:3px;
+    
+}
+
+
+.fileInput{width:102px;height:34px; background:url(../img/upFileBtn.png);overflow:hidden;position:relative;}
+.upfile{position:absolute;top:-100px;}
+.upFileBtn{width:102px;height:34px;opacity:0;filter:alpha(opacity=0);cursor:pointer;}
+.tip {
+     border:1px solid #fa8e19;
+     background:#ffecc0;
+     padding:5px; width:380px;
+    font-size: 12px;
+}
+
+
+.uploadbox {
+     
+    background:#fff; padding:5px;
+}
+
+
+.msglist {
+    width: 340px;
+    height: 356px;
+    float:left;
+}
+
+.msglist2 {
+    width: 300px;
+    height: 200px;
+    float:left;
+}

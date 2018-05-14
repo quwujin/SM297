@@ -1,0 +1,50 @@
+.jsddm
+{	margin: 0;
+	padding: 0;
+	
+	}
+
+	.jsddm li
+	{	float: left;
+		list-style: none;
+		 }
+
+	.jsddm li a
+	{	display: block;
+		 
+	 
+		text-decoration: none;
+	 	height:35px; line-height:35px;
+		width: 120px;
+		color: #fff;
+		white-space: nowrap}
+
+	.jsddm li a:hover
+	{	background: #009966}
+		
+		.jsddm li ul
+		{	margin: 0;
+			padding: 0;
+			position: absolute;
+			visibility: hidden;
+			border-top: 1px solid white}
+		
+			.jsddm li ul li
+			{	float: none;
+				display: inline}
+			
+			.jsddm li ul li a
+			{	width: 120px;
+				background: #009966;
+				color: #fff}
+			
+			.jsddm li ul li a:hover
+			{	background:#FF6600}
+			
+			
+			
+	.clear
+	{	clear: both;
+		overflow: hidden;
+		height: 0
+   }

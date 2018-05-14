@@ -1,0 +1,38 @@
+a img,body,button,div,fieldset,form,h1,h2,h3,h4,h5,h6,html,img,input,li,menu,ol,p,textarea,ul{padding:0;margin:0;border:0}
+li,ol,ul{list-style:none}
+b,em,h1,h2,h3,h4,h5,h6,i{font-size:1em;font-weight:400;font-style:normal}
+/*body,button,input,select,textarea{-webkit-text-size-adjust:none;font:400 16px "Microsoft Yahei","Helvetica Neue",Arial,sans-serif;outline:0;color:#333}
+button,input[type=button],input[type=password],input[type=submit],input[type=text],textarea{-webkit-appearance:none}*/
+a,a:visited{text-decoration:none;color:#333}
+.img img,video{vertical-align:middle}
+body{margin:0 auto;background:#fff}
+.btn{display:inline-block;vertical-align:middle}
+.fl{float:left;}
+.fr{float: right;}
+.clear{clear:both;}
+.clear:after{content:' ';clear:both;display:block;height:0;visibility:hidden;line-height:0}
+.relative{position:relative;}
+.position{position:absolute;left:0;top:0;}
+.fixed{position:fixed;left:0;top:0;}
+.show{display:block;}
+.hide{display:none;}
+body{
+    /*width:6.4rem;*/
+    overflow-x:hidden;
+    -webkit-text-size-adjust:none;
+}
+/*img{ height: auto; display: block;}*/
+/*header */
+        /*.header-back{width:6.4rem; height:0.87rem;border-bottom:2px solid #e3e3e3;position:relative;}
+        .header-back img {width:0.64rem; height:0.61rem;}
+        .header-back .btn-back{width:0.9rem; height:0.87rem;}
+        .header-back h2{font-size:0.35rem;line-height: 0.87rem;text-align: center;color:#d60909;text-align: center;}*/
+/*去除点击时的默认事件 */
+a,button,input,div{-webkit-tap-highlight-color:rgba(0,0,0,0);tap-highlight-color:rgba(0,0,0,0);background:none;}
+/*input[type=button]{display:block;}*/
+.input_file{position:absolute;left:-100px;top:0;width:0;height:0;line-height: 0;}
+ 
+
+
+
+

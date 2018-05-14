@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">  
+  <meta name="format-detection" content="telephone=no">
+    <title>Demo1</title>
+    <style type="text/css">
+        .demo1 {
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+
+    <div style="height: 200px;"></div>
+    <div class="demo1">
+        方本框：<input type="text" id="J-xl">
+    </div>
+
+    <div class="demo1">
+        按钮触发：<input type="text" id="J-xl-2"><input type="button" id="J-xl-2-btn" value="打开">
+    </div>
+
+
+    <div class="demo1">
+        <label for="J-xl-3">Label触发：</label><input type="text" id="J-xl-3">
+    </div>
+
+    <div class="demo1">
+        直接传dom：<input type="text" id="J-xl-4">
+    </div>
+
+
+    <script type="text/javascript" src="js/laydate.dev.min.js"></script>
+    <script type="text/javascript">
+	// min: "2016-04-15 00:00:00",
+        laydate({
+            disable: ["2016,4,11", "2016-04-15"], //限定指定日期
+			Interval:"2016-04-18,2016-04-21;2016-05-24,2016-05-25", //限定指定区间
+            elem: '#J-xl'
+			
+        });
+        document.getElementById('J-xl-2-btn').onclick = function () {
+
+            laydate({
+
+                elem: '#J-xl-2'
+
+            });
+
+        }
+
+        laydate({
+
+            elem: '#J-xl-3'
+
+        });
+
+        laydate({
+
+            elem: document.getElementById('J-xl-4')
+
+        });
+
+        laydate({
+            disable: "",
+            min: "1990-01-01",
+            max: "2017-01-01",
+            Interval: "", //限定指定区间
+            elem: "#tbTime",
+            isweek: "",//限制周末
+            isDay: ""
+        });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+/* CSS Document */
+*{margin:0px; padding:0px;
+}
+input{
+-webkit-appearance:none;
+	outline:none;
+}
+a,img{
+-webkit-appearance:none;
+	outline:none;
+}
+img{
+    width:100%;
+}
+a, button, input, img {
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}    
+input{-webkit-user-modify: read-write-plaintext-only;}
+
+img{padding:0px;margin:0px; vertical-align:middle;}
+#footer{ width:100%;background:#6dc6cf; background-size:100% 100%;float:left;height:50px;overflow:hidden;}
+#footer ul{ list-style:none;margin:0px;padding:0px;width:100%;margin:auto;height:50px;overflow:hidden;}
+#footer ul li{ margin:0px;padding:0px;width:30%;float:left;text-align:center;height:50px;overflow:hidden;margin-left:7px;}
+#footer ul li input{height: 35px;width: 100%; display:block;border:none;margin:0px;padding:0px;border-radius:0px;color:#eb6a9f;}
+#footer ul li .f_btn1{background:url(../images/tj_btn.png) no-repeat; background-size:100% 100%; }
+#footer ul li .f_btn2{background:url(../images/tj_btn.png) no-repeat; background-size:100% 100%; }
+#footer ul li .f_btn3{background:url(../images/tj_btn.png) no-repeat; background-size:100% 100%; }
+/*#footer ul li .f_btn4{background:url(../images/btn4.png) no-repeat; background-size:100% 100%; }*/
+
+ 
+#sbox { position:absolute;z-index:99; display:none; height:25px; margin: auto; color:white; margin-top:200px;background:rgba(0,0,0,0.6);font-size:15px; border: 1px solid #dedede;-moz-border-radius: 5px; /* Gecko browsers */-webkit-border-radius: 5px; /* Webkit browsers */border-radius: 5px; /* W3C syntax */width: 260px;text-align: center; padding: 10px;}
+
+
+/*去掉文本框的默认黄色边框*/
+input,textarea,select,button {outline:none;} 
+
+
+#conts{display:block;overflow:auto;}
+
+body,ul,li {
+	padding:0;
+	margin:0;
+	border:0;
+}
+
+body {
+	font-size:12px;
+	-webkit-user-select:none;
+    -webkit-text-size-adjust:none;
+	font-family:helvetica;
+    overflow:hidden;
+    background:url(../images/bg.jpg) no-repeat;
+    background-size:100% 100%;
+
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */ color:black;}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ color:black; }
+::-moz-placeholder { /* Mozilla Firefox 19+ */ color:black; }
+:-ms-input-placeholder { /* Internet Explorer 10+ */ color:black; }
+
+ 
+.block{display:block;float:left;}
+.bnone{background:none;border:none;} 

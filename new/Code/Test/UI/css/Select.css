@@ -1,0 +1,83 @@
+﻿.sel {
+    display: block;
+    width: 80%;
+    height: 300px;
+    margin: auto;
+    margin-top: 100px;
+    border:none;
+    overflow: hidden; 
+}
+
+.sel ul {
+    width: 100%;
+    height: 250px;
+    display: block;
+    float: left;
+    list-style: none;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: auto;
+}
+
+.sel ul li {
+    width: 100%;
+    height: 50px;
+    float: left;
+    display: block;
+    background: white;
+    margin: 0px;
+    padding: 0px;
+}
+
+.sel ul li input {
+    width: 90%;
+    display:block;
+    margin:auto;
+    height: 50px;
+    border: none;
+    background: none;
+    font-size: 14px;
+    font-weight: bold;
+    border-bottom:1px solid #d0cbcb;
+}
+.sel .title-bg{
+    background: #4cbdff;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 50px;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+}
+
+.sel .title-bt {
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    text-align: center;
+    background:none;
+    color: #fff;
+    width: 80%;
+    height: 50px;
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    float: left;
+    margin-left:30px;
+}
+
+.sel .dot-bottom {
+    display:block;
+    float:left;
+    margin-top:20px;
+    font-size: 0;  
+    line-height: 0;  
+    border-width: 10px;  
+    border-color: #bedff3;  
+    border-bottom-width: 0;  
+    border-style: dashed;  
+    border-top-style: solid;  
+    border-left-color: transparent;  
+    border-right-color: transparent;  
+}

@@ -1,0 +1,535 @@
+﻿@charset "UTF-8";
+/**jason css
+*  17.4.7
+**/
+
+
+.container {
+  width: 1000px;
+  height: 500px;
+  margin: 0 auto;
+  background-color: #efefef;
+  z-index:99;
+  position: fixed; 
+  top: 10%;
+  left: 0; bottom: 0; right: 0;
+}
+
+.container .red_bg {
+  background-color: #eb7777;
+}
+
+.container .left {
+  width: 60%;
+  height: 500px;
+  float: left;
+  overflow: auto;
+  position:relative;
+}
+.container .showImg_div{
+   width: 100%;
+   height:500px;
+   position:relative;
+   float:left;
+   overflow:auto;
+   overflow-x:hidden;
+   margin: 0 auto;
+}
+.container .showImg{
+    margin: 0 auto;
+}
+
+.container .left .xp {
+  margin: 0 auto;
+}
+
+.container .right {
+  width: 40%;
+  height: 100%;
+  float: left;
+  /*!头部-------------------------------------*/
+  /*头部end---------------------------------------*/
+}
+
+.container .right .ocrheader {
+  width: 100%;
+  height: 36px;
+  background-color: #1e7dc1;
+  box-sizing: border-box;
+}
+
+.container .right .ocrheader .header_option {
+  width: 90%;
+  height: 100%;
+  float: left;
+}
+
+.container .right .ocrheader .header_option .h_item {
+  width: 25%;
+  height: 100%;
+  float: left;
+  color: #99ccff;
+  text-align: center;
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 36px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.container .right .ocrheader .header_option .h_item.active {
+  color: #fff;
+  border-bottom: 2px solid #fff;
+}
+
+.container .right .ocrheader .header_option .h_item .number {
+  display: block;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  right: 0;
+  top: 2px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 10px;
+  line-height: 18px;
+  color: #eb7777;
+  background-color: #fff;
+}
+
+.container .right .ocrheader .btn_close {
+  width: 10%;
+  height: 100%;
+  float: left;
+  text-align: center;
+  line-height: 36px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  background: url("../images/white_x.png") center center no-repeat;
+}
+
+.container .right .content_box {
+  width: 100%;
+  height: 460px;
+  overflow: auto;
+  position: relative;
+}
+
+.container .right .content_box .c_item {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+  padding-bottom: 30px;
+}
+
+/*读取数据------------------------------*/
+.data_read {
+  width: 100%;
+  height: auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+  margin-top: 20px;
+}
+
+.data_read .data_sum {
+  box-sizing: border-box;
+  width: 100%;
+  height: 66px;
+  border: 1px solid #99cc66;
+  font-size: 14px;
+}
+
+.data_read .data_sum .left {
+  width: 30%;
+  height: 100%;
+  float: left;
+  box-sizing: border-box;
+  border-right: 1px dashed #99cc66;
+}
+
+.data_read .data_sum .right {
+  width: 70%;
+  height: 100%;
+  float: left;
+}
+
+.data_read .data_sum .top, .data_read .data_sum .bottom {
+  width: 100%;
+  height: 50%;
+  text-align: center;
+  line-height: 33px;
+}
+
+.data_read .data_sum .top .num_info, .data_read .data_sum .bottom .num_info {
+  width: 33%;
+  height: 100%;
+  float: left;
+  text-align: center;
+  font-size: 12px;
+}
+
+.data_read .data_info .form-control {
+  position: relative;
+  margin-top: 12px;
+}
+
+.data_read .data_info .form-control .btn_close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  color: #000;
+  z-index: 3;
+  background: url("../images/little_x.png") center center no-repeat;
+  padding:6px 12px; 
+}
+.data_read .data_info .form-control .user_name {
+  background:none;
+  border:none;
+  padding:0px;
+}
+
+.data_read .btn_box {
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin-top: 22px;
+}
+
+.data_read .btn_box .btn_void, .data_read .btn_box .btn_up, .data_read .btn_box .btn_pass {
+  width: 30%;
+  height: 30px;
+  float: left;
+  color: #fff;
+  font-size: 14px;
+}
+
+.data_read .btn_box .btn_void {
+  background-color: #eb7777;
+}
+
+.data_read .btn_box .btn_up {
+  background-color: #1e7dc1;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.data_read .btn_box .btn_pass {
+  background-color: #77c74b;
+  float: right;
+}
+
+/*读取数据end------------------------------*/
+/*产品信息-----------------------------*/
+.product_info {
+  width: 100%;
+  height: auto;
+}
+
+.product_info .shopNameList {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  padding: 0 25px;
+  margin-top: 20px;
+}
+
+.product_info .shopNameList .name_list {
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 10px 10px;
+  margin-top: 20px;
+}
+
+.product_info .shopNameList .name_list .shop_left {
+  float: left;
+  width: 80%;
+  height: auto;
+}
+
+.product_info .shopNameList .name_list .shop_left .shop_name, .product_info .shopNameList .name_list .shop_left .shop_num, .product_info .shopNameList .name_list .shop_left .shop_price, .product_info .shopNameList .name_list .shop_left .shop_stock {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  float: left;
+  font-size: 12px;
+  color: #000;
+  box-sizing: border-box;
+}
+
+.product_info .shopNameList .name_list .shop_left .shop_stock {
+  float: right;
+}
+
+.product_info .shopNameList .name_list .shop_left .shop_name {
+  width: 100%;
+  height: 30px;
+  text-indent: 12px;
+}
+
+.product_info .shopNameList .name_list .shop_left .shop_num, .product_info .shopNameList .name_list .shop_left .shop_price, .product_info .shopNameList .name_list .shop_left .shop_stock {
+  width: 32%;
+  height: 30px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.product_info .shopNameList .name_list .shop_left .shop_price {
+  margin-left: 5px;
+}
+
+.product_info .shopNameList .name_list .shop_right {
+  float: right;
+  width: 20%;
+  height: auto;
+}
+
+.product_info .shopNameList .name_list .shop_right .btn_update, .product_info .shopNameList .name_list .shop_right .btn_delete {
+  width: 54px;
+  height: 30px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 16px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #999999;
+}
+
+.product_info .shopNameList .name_list .shop_right .btn_delete {
+  color: #6699cc;
+  border: 1px solid #6699cc;
+}
+
+.product_info .shopNameList .name_list .shop_right .btn_update {
+  margin-top: 5px;
+  color: #fff;
+  background-color: #97d475;
+}
+
+.product_info .sum_money {
+  padding: 0 25px;
+  text-align: right;
+  color: #6699cc;
+  font-size: 12px;
+  margin-top: 15px;
+}
+
+.product_info .btn_add {
+  width: 34px;
+  height: 34px;
+  display:block;
+  background-image: url("../images/btn_add.png");
+  background-size: 100% 100%;
+  margin: 0 auto;
+}
+
+/*产品信息 end-----------------------------*/
+/*源数据-----------------------------------*/
+.source_date {
+  width: 100%;
+  height: auto;
+  padding: 0 30px;
+  margin-top: 20px;
+  box-sizing: border-box;
+}
+
+.source_date .order_key {
+  background-color: #fff;
+  width: 100%;
+  height: 80px;
+  position: relative;
+}
+
+.source_date .order_key:after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #efefef;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  left: -5px;
+}
+
+.source_date .order_key:before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #efefef;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  right: -5px;
+}
+
+.source_date .order_key .top, .source_date .order_key .bottom {
+  width: 100%;
+  height: 50%;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 40px;
+  color: #6e6e6e;
+  font-size: 12px;
+}
+
+.source_date .order_key .top {
+  border-bottom: 1px dashed #ccc;
+}
+
+.source_date .btn_box {
+  width: 100%;
+  height: auto;
+}
+
+.source_date .btn_box .btn_list {
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin-top: 10px;
+}
+
+.source_date .btn_box .btn_list .shop_name {
+  width: 30%;
+  height: 35px;
+  float: left;
+}
+
+.source_date .btn_box .btn_list .shop_key {
+  width: 45%;
+  height: 35px;
+  float: left;
+  margin-left: 5px;
+}
+
+.source_date .btn_box .btn_list .shop_name, .source_date .btn_box .btn_list .shop_key {
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 35px;
+}
+
+.source_date .btn_box .btn_list .btn_sub {
+  width: 22%;
+  height: 35px;
+  float: right;
+  text-align: center;
+  line-height: 35px;
+  background-color: #1e7dc1;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.source_date .btn_x {
+  width: 100%;
+  height: 36px;
+  color: #fff;
+  border-radius: 5px;
+  margin: 15px auto;
+}
+
+.source_date .shop_info {
+  width: 100%;
+  height: auto;
+}
+
+.source_date .shop_info .btn_info {
+  width: 100%;
+  height: 28px;
+  border: 1px solid #1e7dc1;
+  border-radius: 5px;
+  margin-top: 10px;
+  text-align: center;
+  color: #1e7dc1;
+}
+.showImg .ret{border:1px solid red;position:absolute;display:none;float:left;color:white;font-size:20px;text-align:center;}
+
+/*源数据 end-----------------------------------*/
+/*异常小票--------------------------------*/
+.unnormal_xp {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+.unnormal_xp .btn_header {
+  width: 80%;
+  height: 30px;
+  margin: 0 auto;
+  position:relative;
+}
+
+.unnormal_xp .btn_header .btn_unNormal, .unnormal_xp .btn_header .btn_normal {
+  border-radius: 5px;
+  border: 1px solid #1e7dc1;
+  box-sizing: border-box;
+  float: left;
+  color: #1e7dc1;
+}
+
+.unnormal_xp .btn_header .btn_unNormal.active, .unnormal_xp .btn_header .btn_normal.active {
+  background-color: #1e7dc1;
+  color: #fff;
+}
+
+.unnormal_xp .btn_header .btn_unNormal {
+  width: 65%;
+  height: 30px;
+}
+.unnormal_xp .option_box{
+  width: 65%;
+  height:95px;
+  position:absolute;
+  left:0;top:30px;
+  overflow: auto;
+  box-sizing: border-box;
+  border:1px solid #1e7dc1;
+  background-color:#efefef;
+  display: none;
+}
+.unnormal_xp .option_box .btn_img{
+  width:100%;
+  height:30px;
+  text-align: center;
+  font-size:16px;
+  color:#000;
+
+}
+
+.unnormal_xp .btn_header .btn_normal {
+  float: right;
+  width: 25%;
+  height: 30px;
+}
+
+.unnormal_xp .img_list {
+  width: 80%;
+  height: 350px;
+  margin: 0 auto;
+  border: 1px solid #1e7dc1;
+  background-color: #FFF;
+  margin-top: 16px;
+  overflow: auto;
+}
+
+.unnormal_xp .img_list .xp {
+  margin: 10px auto;
+}
+
+/*异常小票 end--------------------------------*/

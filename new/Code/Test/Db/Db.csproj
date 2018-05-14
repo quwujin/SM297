@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{28B438DE-CE09-4361-A555-F1751BA1E6E2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Db</RootNamespace>
+    <AssemblyName>Db</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddReplayDal.cs" />
+    <Compile Include="AwardsStatisticsDal.cs" />
+    <Compile Include="BehaviorLogDal.cs" />
+    <Compile Include="Cj_LogDal.cs" />
+    <Compile Include="CodesDal.cs" />
+    <Compile Include="CommonFunctionDal.cs" />
+    <Compile Include="ConDal.cs" />
+    <Compile Include="ConfigDal.cs" />
+    <Compile Include="ConfigLogDal.cs" />
+    <Compile Include="CrmUserDal.cs" />
+    <Compile Include="DbTool.cs" />
+    <Compile Include="DelayedAwardsDal.cs" />
+    <Compile Include="DictConfigDal.cs" />
+    <Compile Include="DistanceDal.cs" />
+    <Compile Include="DzCodesDal.cs" />
+    <Compile Include="FictitiousOrderDal.cs" />
+    <Compile Include="FileInfoDal.cs" />
+    <Compile Include="GenerationOrderIdDal.cs" />
+    <Compile Include="InfoDal.cs" />
+    <Compile Include="KeysClassDal.cs" />
+    <Compile Include="LogConfigDal.cs" />
+    <Compile Include="Login_LogDal.cs" />
+    <Compile Include="LotteryErro_LogDal.cs" />
+    <Compile Include="MediaClassDal.cs" />
+    <Compile Include="MenuDal.cs" />
+    <Compile Include="MessageAutoDal.cs" />
+    <Compile Include="MovieDal.cs" />
+    <Compile Include="MsgConfigDal.cs" />
+    <Compile Include="ObjectInfoDal.cs" />
+    <Compile Include="Operation_LogDal.cs" />
+    <Compile Include="OrderInfoDal.cs" />
+    <Compile Include="OrderLogDal.cs" />
+    <Compile Include="Pager.cs" />
+    <Compile Include="PassCodeInfoDal.cs" />
+    <Compile Include="PolicyDal.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProvinceCityDal.cs" />
+    <Compile Include="RedPack_LogDal.cs" />
+    <Compile Include="Security\IpAccessControlDal.cs" />
+    <Compile Include="Security\IpAccessControlLogDal.cs" />
+    <Compile Include="Security\IpAccessControlSettingDal.cs" />
+    <Compile Include="SourceInfoDal.cs" />
+    <Compile Include="SqlHelper.cs" />
+    <Compile Include="SupplierInfoDal.cs" />
+    <Compile Include="UserInfoDal.cs" />
+    <Compile Include="UserInfoGroupDal.cs" />
+    <Compile Include="UserInfoPostDal.cs" />
+    <Compile Include="VerificationCodeDal.cs" />
+    <Compile Include="VoteInfoDal.cs" />
+    <Compile Include="WebApiInterface_LogDal.cs" />
+    <Compile Include="WxKeysDal.cs" />
+    <Compile Include="WxMenuDal.cs" />
+    <Compile Include="WxMessageDal.cs" />
+    <Compile Include="WxMsgDal.cs" />
+    <Compile Include="ZpConfigDal.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{6c2b9ae0-2334-45ea-9a28-e79d7d9e6d05}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,70 @@
+@charset "utf-8";
+/* CSS Document */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, img, ins, kbd, q, s, samp, small, strike, strong, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td
+{ margin:0; padding:0; border:0; outline:0; font-size:12px; vertical-align:baselinebaseline; background:transparent;}   
+*{margin:0; padding:0;}
+ol,ul{ list-style: none;}
+.cl{clear:both; height:0; font-size:0px; width:0; line-height:0} 
+body{ font:12px"微软雅黑"; color:#646464; background:#FFF;}
+a{text-decoration:none;}
+
+ 
+
+.flexslider{ position:relative; height:369px; overflow: hidden; background: url(../images/loading.gif) 50% no-repeat;}
+.slides{ position: relative; z-index: 1;}
+.slides li{ height:369px;}
+.flex-control-nav{ position:absolute; bottom:10px; z-index:9999; width:100%; text-align:center;}
+.flex-control-nav li{ display:inline-block; width:30px; height:11px; margin:0 5px; *display:inline; zoom:1;}
+.flex-control-nav a{ display:inline-block; width:30px; height:11px; line-height:40px; overflow:hidden; background: url(../images/dot.png) right 0 no-repeat; cursor:pointer;}
+.flex-control-nav .flex-active{ background-position: 0 0;}
+
+.login{ width:1060px; height:369px; position:absolute; z-index:999; margin-left:-530px; left:50%; top:175px;}
+.login_body{ width:252px; height:220px; background:#FFF; margin:60px 0 0 808px;}
+.login_body h2{ height:55px; background:url(../images/login_title.jpg) no-repeat;}
+.loginbar,.regbar{ display:block; height:45px; width:201px; margin-left:25px;}
+.loginbar{ background:url(../images/login_btn01.jpg) no-repeat; margin-top:30px;}
+.regbar{ background:url(../images/login_btn02.jpg) no-repeat; margin-top:20px;}
+
+.ys,.ys_body{ height:auto; padding-bottom:15px; overflow:hidden;}
+.ys{ width:100%; background:#fafafa;}
+.ys_body{ width:1060px; margin:0 auto;}
+.ys_body div{ float:left; width:353px; height:auto; overflow:hidden; margin-top:30px;}
+.ys_body div b{ display:block; float:left; width:50px; height:50px;}
+.ys_body div dl{ float:left; width:270px; height:auto; overflow:hidden; margin-left:26px;}
+.ys_body div dl dt{ height:30px; background:url(../images/ys_sj.gif) no-repeat center left; text-indent:10px; font-size:20px; color:#d34a03; line-height:30px; }
+.ys_body div dl dd{ height:auto; overflow:hidden; line-height:24px; font-size:13px; color:#5a5a5a;}
+
+.main_table{ width:1060px; height:auto; padding-top:20px; margin:0 auto; overflow:hidden;}
+.main_table_title{ width:1060px; height:38px; background:url(../images/cp_table_title_bg.jpg) no-repeat;}
+#salesb{ float:left; width:240px; height:36px;}
+#salesb li{ float:left; width:120px; height:36px; background:#d6c9c9;}
+#salesb li a{ display:block; float:left; width:120px; height:36px; font-family:"微软雅黑"; font-size:14px; color:#7a5454; line-height:35px; text-align:center; font-weight:normal;}
+#salesb li.emptyTag{ background:none transparent scroll repeat 0% 0%; WIDTH:4px;}
+#salesb li.selectTag{ background-position: left top; margin-bottom:-2px; POSITION: relative; HEIGHT:36px;}
+#salesb li.selectTag a{ background-position: right top; LINE-HEIGHT:36px; HEIGHT:36px; background:#f76920; color:#FFF;}
+#saleContent{ width:100%; height:auto; overflow:hidden;}
+.saleContent{ display:none; width:100%; height:auto; overflow:hidden;}
+#saleContent DIV.selectTag { display:block;}
+
+.main_table_title_a{ display:block; float:right; width:80px; height:20px; background:#F60; text-align:center; line-height:20px; color:#FFF; margin:8px 10px 0 0;}
+.main_table_title_a:hover{ background:#C00;}
+
+.table_A,.table_A td,.table_A th{ border:1px solid #d9d9d9; border-collapse:collapse;}
+.table_A th{ background:#f7efeb; color:#000; padding:8px 0;}
+.table_A td span{ display:block; height:30px; line-height:30px; text-indent:20px;}
+.main_tab_line_fl{ height:30px; border-bottom:1px solid #d9d9d9; text-align:left; font-family:"宋体";}
+.main_tab_line_c{ height:30px; border-bottom:1px solid #d9d9d9; text-align:center; font-family:"宋体";}
+.main_tab_fl{ text-indent:10px; font-family:"宋体";}
+.main_tab_c{ text-align:center; font-family:"宋体";}
+.main_tab_btn_1{ color:#e75d0c; font-family:"宋体";}
+.main_tab_btn_2{ display:block; width:39px; height:20px; background:url(../images/index_ck.gif) no-repeat; margin:0 auto;}
+.main_tab_fl a{ display:inline-block; color:#646464; font-family:"宋体";}
+.main_tab_hot{ display:inline-block; width:33px; height:15px; background:url(../images/hot_t.gif) no-repeat;}
+
+ 
+
+
+
+
+
+

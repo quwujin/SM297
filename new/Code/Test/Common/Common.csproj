@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{32C46015-2F2F-4899-8C74-591DF697AA7C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Common</RootNamespace>
+    <AssemblyName>Common</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\WebApiClient\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI">
+      <HintPath>..\WebApiClient\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OOXML">
+      <HintPath>..\WebApiClient\NPOI.OOXML.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net">
+      <HintPath>..\WebApiClient\NPOI.OpenXml4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats">
+      <HintPath>..\WebApiClient\NPOI.OpenXmlFormats.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CacheHelper.cs" />
+    <Compile Include="ClientIP.cs" />
+    <Compile Include="CookieHelper.cs" />
+    <Compile Include="CSVFileHelper.cs" />
+    <Compile Include="Data.cs" />
+    <Compile Include="DateTimeHelper.cs" />
+    <Compile Include="Des.cs" />
+    <Compile Include="EmailTool.cs" />
+    <Compile Include="EmptyMobileAPI.cs" />
+    <Compile Include="EswAPIHelper.cs" />
+    <Compile Include="FileHash.cs" />
+    <Compile Include="Fun.cs" />
+    <Compile Include="GetGeocoding.cs" />
+    <Compile Include="GetMobHome.cs" />
+    <Compile Include="GetShortUrl.cs" />
+    <Compile Include="JScript.cs" />
+    <Compile Include="JsonHelper.cs" />
+    <Compile Include="LogCommon.cs" />
+    <Compile Include="Md5.cs" />
+    <Compile Include="MessageApi.cs" />
+    <Compile Include="NPOIHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Prize.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RedPackHelper.cs" />
+    <Compile Include="ReplaceErorrSql.cs" />
+    <Compile Include="SearchRedPack.cs" />
+    <Compile Include="SearchStock.cs" />
+    <Compile Include="TransferAPI.cs" />
+    <Compile Include="TypeHelper.cs" />
+    <Compile Include="ValidateHelper.cs" />
+    <Compile Include="WebNet.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Db\Db.csproj">
+      <Project>{28b438de-ce09-4361-a555-f1751ba1e6e2}</Project>
+      <Name>Db</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{6c2b9ae0-2334-45ea-9a28-e79d7d9e6d05}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
