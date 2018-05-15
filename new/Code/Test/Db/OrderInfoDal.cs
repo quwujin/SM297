@@ -463,7 +463,7 @@ namespace Db
                     {
                         StringBuilder strSql = new StringBuilder();
                         strSql.Append("update OrderInfo set ");
-                        strSql.Append("Name=@Name,Types=@Types,Adds=@Adds,States=@States,PrizeCode=@PrizeCode,Mob=@Mob");
+                        strSql.Append("Name=@Name,Types=@Types,Adds=@Adds,States=@States,PrizeCode=@PrizeCode,Mob=@Mob,Province=@Province,Area=@Area,City=@City");
                         strSql.Append(" where Id=@Id ");
 
                         SqlParameter[] parameters = {
@@ -473,6 +473,9 @@ namespace Db
                         ,					new SqlParameter("@States", DbTool.FixSqlParameter(model.States))
                         ,					new SqlParameter("@PrizeCode", DbTool.FixSqlParameter(model.PrizeCode))
                         ,					new SqlParameter("@Mob", DbTool.FixSqlParameter(model.Mob))
+                        ,					new SqlParameter("@Province", DbTool.FixSqlParameter(model.Province))
+                        ,					new SqlParameter("@Area", DbTool.FixSqlParameter(model.Area))
+                        ,					new SqlParameter("@City", DbTool.FixSqlParameter(model.City))
                         ,					new SqlParameter("@Id", model.Id)
                                         };
                         rtn += SqlHelper.ExecuteNonQuery(trans, CommandType.Text, strSql.ToString(), parameters);

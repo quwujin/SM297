@@ -16,7 +16,10 @@ namespace Model
            public string HeadImgurl { get; set; }
            public string Texts { get; set; }
            public int FilesId { get; set; }
-           public int States { get; set; }
+        /// <summary>
+        /// 2:Î´³é½± 3:ÒÑ³é½± 1£ºÒÑÍê³É 0£º´ıÉóºË
+        /// </summary>
+        public int States { get; set; }
            public int Number { get; set; }
            public string Name { get; set; }
            public string Mob { get; set; }

@@ -502,9 +502,9 @@ namespace WebFramework
 
                 Common.Data Dictionary = new Common.Data();
 
-                Dictionary.SetValue("pnum", GetKeyConfig(22).Val);//GetKeyConfig(22).Val
-                Dictionary.SetValue("uid", GetKeyConfig(32).Val);//GetKeyConfig(32).Val
-                Dictionary.SetValue("key", GetKeyConfig(33).Val);//GetKeyConfig(33).Val
+                Dictionary.SetValue("pnum", "Wujin_SM297");//GetKeyConfig(22).Val
+                Dictionary.SetValue("uid", "wujin.qu");//GetKeyConfig(32).Val
+                Dictionary.SetValue("key", "4e397af7fb0f4e489c359755ea54e1a9");//GetKeyConfig(33).Val
                 Dictionary.SetValue("sign", Dictionary.MakeSign());
                 //Dictionary.SetValue("areas", "");
                 //Dictionary.SetValue("watermarkDesc", "");

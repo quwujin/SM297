@@ -8,7 +8,9 @@ using WebFramework.ESLog;
 
 public partial class UploadFile : NBase
 {
-
+    Db.InfoDal infodal = new Db.InfoDal();
+    Db.OrderInfoDal dal = new Db.OrderInfoDal();
+    public Model.InfoModel mm = new Model.InfoModel();
     protected void Page_Load(object sender, EventArgs e)
     {
         if (!IsPostBack)
@@ -43,7 +45,7 @@ public partial class UploadFile : NBase
                 return;
             }
             #endregion
-
+            mm = infodal.GetModel(1);
         }
     }
 }

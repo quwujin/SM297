@@ -25,7 +25,7 @@ public class ProcessUploadFile
 
       private static readonly object _SyncLock = new object();
       private static readonly object _PrizeLock = new object();
-
+    //上传小票
       public Model.ReturnValue ProcessUpload(HttpContext context)
       {
 

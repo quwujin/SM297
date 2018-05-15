@@ -19,10 +19,10 @@ public partial class _Default : System.Web.UI.Page
             #endregion 
  
             //串码抽奖
-            Response.Redirect("View_CodeDraw/SubmitCode.aspx");
+            //Response.Redirect("View_CodeDraw/SubmitCode.aspx");
 
             //上传小票
-            //Response.Redirect("View_UploadFile/UploadFile.aspx");
+            Response.Redirect("index.aspx");
 
         }
 
