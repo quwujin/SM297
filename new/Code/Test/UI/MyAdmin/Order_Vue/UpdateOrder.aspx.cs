@@ -351,38 +351,43 @@ public partial class MyAdmin_Order_UpdateOrder : System.Web.UI.Page
             msgModel = MsgConfigDal.GetModel(3);
 
             #region 发送红包
-            Common.RedPackHelper rp = new Common.RedPackHelper();
+            //Common.RedPackHelper rp = new Common.RedPackHelper();
 
-            int moeny = model.RedPackMoney;
+            //int moeny = model.RedPackMoney;
 
-            if (WebFramework.GeneralMethodBase.GetKeyConfig(3).States == 1)
-            {
-                moeny = 100;
-            }
+            //if (WebFramework.GeneralMethodBase.GetKeyConfig(3).States == 1)
+            //{
+            //    moeny = 100;
+            //}
 
-            if (WebFramework.GeneralMethodBase.GetKeyConfig(6).Val.ToLower() == "false") //红包开关
-            {
-                returnValue.Success = false;
-                returnValue.ErrMessage = "微信红包发放未开启，请联系管理员";
-                return returnValue;
-            }
+            //if (WebFramework.GeneralMethodBase.GetKeyConfig(6).Val.ToLower() == "false") //红包开关
+            //{
+            //    returnValue.Success = false;
+            //    returnValue.ErrMessage = "微信红包发放未开启，请联系管理员";
+            //    return returnValue;
+            //}
 
-            int acid = Common.TypeHelper.ObjectToInt(WebFramework.GeneralMethodBase.GetKeyConfig(29).Val, 0);
-            int hid = Common.TypeHelper.ObjectToInt(WebFramework.GeneralMethodBase.GetKeyConfig(52).Val, 0);
-            string ckey = WebFramework.GeneralMethodBase.GetKeyConfig(30).Val;
-            string hkey = WebFramework.GeneralMethodBase.GetKeyConfig(31).Val;
+            //int acid = Common.TypeHelper.ObjectToInt(WebFramework.GeneralMethodBase.GetKeyConfig(29).Val, 0);
+            //int hid = Common.TypeHelper.ObjectToInt(WebFramework.GeneralMethodBase.GetKeyConfig(52).Val, 0);
+            //string ckey = WebFramework.GeneralMethodBase.GetKeyConfig(30).Val;
+            //string hkey = WebFramework.GeneralMethodBase.GetKeyConfig(31).Val;
 
-            Common.RedPackHelper.result result = rp.send(acid, hid, model.OpenId, model.HbOrderCode, moeny, ckey, hkey);
+            //Common.RedPackHelper.result result = rp.send(acid, hid, model.OpenId, model.HbOrderCode, moeny, ckey, hkey);
 
-            if (result.SendStatus == false)
-            {
-                returnValue.Success = false;
-                returnValue.ErrMessage = result.MSG;
-                return returnValue;
-            }
+            //if (result.SendStatus == false)
+            //{
+            //    returnValue.Success = false;
+            //    returnValue.ErrMessage = result.MSG;
+            //    return returnValue;
+            //}
 
             #endregion
 
+        }
+
+       else if (model.Jx == "二等奖")
+        {
+            msgModel = MsgConfigDal.GetModel(4);
         }
         else
         {
@@ -406,9 +411,9 @@ public partial class MyAdmin_Order_UpdateOrder : System.Web.UI.Page
         if (i > 0)
         {
             #region 发送短信
-            if (msgModel != null && msgModel.MsgTemp.Length > 10 && model.PrizeCode.Length > 5)
+            if (msgModel != null && msgModel.MsgTemp.Length > 10)
             {
-                Common.MessageApi.SendMessage(msgModel.MsgTemp, model.Mob, msgModel.MsgType, msgModel.SupplierId, Common.TypeHelper.ObjectToInt(WebFramework.GeneralMethodBase.GetKeyConfig(20).Val, 0), WebFramework.GeneralMethodBase.GetKeyConfig(21).Val);
+               var a = Common.MessageApi.SendMessage(msgModel.MsgTemp, model.Mob, msgModel.MsgType, msgModel.SupplierId, Common.TypeHelper.ObjectToInt(WebFramework.GeneralMethodBase.GetKeyConfig(20).Val, 0), WebFramework.GeneralMethodBase.GetKeyConfig(21).Val);
             }
             #endregion
 
@@ -481,6 +486,7 @@ public partial class MyAdmin_Order_UpdateOrder : System.Web.UI.Page
     {
 
         int id = Common.TypeHelper.ObjectToInt(Request["OrderId"], 0);
+        string reason = Request["popoverVal"];
 
         model = OrderDal.GetModel(id);
 
@@ -541,7 +547,7 @@ public partial class MyAdmin_Order_UpdateOrder : System.Web.UI.Page
             #region 发送短信
             if (mdlog.HideContent.Length > 10)
             {
-                Common.MessageApi.SendMessage(msgModel.MsgTemp, model.Mob, msgModel.MsgType, msgModel.SupplierId, Common.TypeHelper.ObjectToInt(WebFramework.GeneralMethodBase.GetKeyConfig(20).Val, 0), WebFramework.GeneralMethodBase.GetKeyConfig(21).Val);
+               var a =  Common.MessageApi.SendMessage(msgModel.MsgTemp.Replace("reason",reason), model.Mob, msgModel.MsgType, msgModel.SupplierId, Common.TypeHelper.ObjectToInt(WebFramework.GeneralMethodBase.GetKeyConfig(20).Val, 0), WebFramework.GeneralMethodBase.GetKeyConfig(21).Val);
             }
             #endregion
 

@@ -60,8 +60,8 @@ E:\项目代码\士力架\new\Code\Test\Common\bin\Debug\Db.dll
 E:\项目代码\士力架\new\Code\Test\Common\bin\Debug\Model.dll
 E:\项目代码\士力架\new\Code\Test\Common\bin\Debug\Db.pdb
 E:\项目代码\士力架\new\Code\Test\Common\bin\Debug\Model.pdb
-E:\项目代码\士力架\new\Code\Test\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
 E:\项目代码\士力架\new\Code\Test\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
 E:\项目代码\士力架\new\Code\Test\Common\obj\Debug\Common.csproj.CopyComplete
 E:\项目代码\士力架\new\Code\Test\Common\obj\Debug\Common.dll
 E:\项目代码\士力架\new\Code\Test\Common\obj\Debug\Common.pdb
+E:\项目代码\士力架\new\Code\Test\Common\obj\Debug\Common.csprojAssemblyReference.cache

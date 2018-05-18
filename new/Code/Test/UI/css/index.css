@@ -320,6 +320,7 @@ div.boxindextitle p.pindextitleinfo span.spanindextitleinfo {
 .boxprize1 .pboxprize1gettitle{
     font-size: .4rem;
     font-weight: bold;
+    line-height: .5rem;
 }
 .boxprize1 .pboxprize1gettitletips{
     font-size: .26rem;
@@ -327,7 +328,7 @@ div.boxindextitle p.pindextitleinfo span.spanindextitleinfo {
 }
 .boxprize1 .divprize1getshow{
     width: 2.96rem;
-    margin-bottom: .8rem;
+    margin-bottom: .76rem;
 }
 /*prize2*/
 .boxprize2 .pboxprize2gettitle{

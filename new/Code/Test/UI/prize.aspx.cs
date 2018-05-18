@@ -7,7 +7,9 @@ using System.Web.UI.WebControls;
 
 public partial class prize :NBase
 {
+    Db.InfoDal infodal = new Db.InfoDal();
     Db.OrderInfoDal dal = new Db.OrderInfoDal();
+    public Model.InfoModel mm = new Model.InfoModel();
     protected void Page_Load(object sender, EventArgs e)
     {
         #region 上下线控制
@@ -39,7 +41,7 @@ public partial class prize :NBase
             return;
         }
         #endregion
-
+        mm = infodal.GetModel(1);
         Model.OrderInfoModel model = dal.GetModel(" and ordercode='" + orderSession.OrderKey + "'");
         if (model.Id > 0)
         {

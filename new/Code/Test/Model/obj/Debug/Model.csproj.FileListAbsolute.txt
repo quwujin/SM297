@@ -27,7 +27,7 @@ D:\源慧\SVN\平台项目\通用项目平台\Code\Test\Model\obj\Debug\Model.dl
 D:\源慧\SVN\平台项目\通用项目平台\Code\Test\Model\obj\Debug\Model.pdb
 E:\项目代码\士力架\new\Code\Test\Model\bin\Debug\Model.dll
 E:\项目代码\士力架\new\Code\Test\Model\bin\Debug\Model.pdb
-E:\项目代码\士力架\new\Code\Test\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
 E:\项目代码\士力架\new\Code\Test\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
 E:\项目代码\士力架\new\Code\Test\Model\obj\Debug\Model.dll
 E:\项目代码\士力架\new\Code\Test\Model\obj\Debug\Model.pdb
+E:\项目代码\士力架\new\Code\Test\Model\obj\Debug\Model.csprojAssemblyReference.cache

@@ -33,9 +33,9 @@ public partial class MyAdmin_AdminOrderInfo : PageBase
         }
 
         orderQty = dal.CheckCount(" ");
-        orderQty1 = dal.CheckCount(" and States=1");
-        orderQty2 = dal.CheckCount(" and States=-1");
-        orderQty0 = dal.CheckCount(" and States=0");
+        orderQty1 = dal.CheckCount(" and States=1");//已完成
+        orderQty2 = dal.CheckCount(" and States=-1");//作废
+        orderQty0 = dal.CheckCount(" and States=0");//待审核
     }
      
      

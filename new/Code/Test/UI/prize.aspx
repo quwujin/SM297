@@ -116,7 +116,7 @@
                             <p class="ppoptitle">活动说明</p>
                         </div>
                         <div class="divpopcontent m0a">
-                            <div class="activeinfocon m0a">There is active statement.There is active statement.There is a ctinfo.There is active statement.Th 这里是活动说明. 这里是活动说明. 这里是活动说明. 这里是活动说明. 这里是活动说明. 这里是活动说明. 这里是活动说明. 这里是活动说明. 这里是活动说明. 这里是活动说明. 这里是活动说明. 这里是活动说明. 这里是活动说明. 这里是活动说明. 这里是活动说明. 这里是活动说明. 这里是活动说明. ere is active statement.There is active statement.There is active statement.There is active statement.There is active statement.There is active statement. There is active statement.There is active statement.There is active statement.There is ac tinfo.There is active statement.There is active statement.There is active statement.There is active statement.There is active statement.There is active statement.There is active statement.There is active statement.There is active statement.There is active statement.There is active statement.There is active statement.There is a ctinfo.There is active statement.There is active statement.There is active statement.There is active statement.There is active statement.There is active statement.There is active statement.There is active statement.There is active statement.There is active statement.Th ere is active statement.There is active statement.There is active statement.There is active statement.There is active statement.There is active statement.There is active statement.There is active statement.There is active statement.There is act info.Th ere is active statement.There is active statement.There is actinf o.There is active statement.There is active statement.There is active statement.There is active statement.There is active statement.There is active statement.There is active statement.There is active statement.There is active statement.There is active statement.T here is active statement.There is active statement.There is active statement.There is active statement.There is active statement.There is active statement.There is active statement.There is active statement.There is active statement.There is active statement.There is active statement.There is active statement.</div>
+                            <div class="activeinfocon m0a"><%=mm.Notes %></div>
                         </div>
                     </div>
                     <div class="divinputbtn">
@@ -215,12 +215,12 @@
 
         if ($("#Hprize").val() == 1) { //一等奖
             $("div.boxcotainer div.boxprize1").removeClass("hide");
-            //GameContent.friend = "我在士力架世界杯活动中抽中了俄罗斯机票一张，快来抽出属于你的惊喜好礼吧!";
-            //initsharemassage(GameContent);
+            GameContent.friend = "我在士力架世界杯活动中抽中了俄罗斯机票一张，快来抽出属于你的惊喜好礼吧!";
+            initsharemassage(GameContent);
         } else if ($("#Hprize").val() == 2) { //二等奖
             $("div.boxcotainer div.boxprize2").removeClass("hide");
-            //GameContent.friend = "我在士力架世界杯活动中抽中了定制足球一个，快来抽出属于你的惊喜好礼吧!";
-            //initsharemassage(GameContent);
+            GameContent.friend = "我在士力架世界杯活动中抽中了定制足球一个，快来抽出属于你的惊喜好礼吧!";
+            initsharemassage(GameContent);
             // 省市区函数
             shenShi();
         } else { //参与奖

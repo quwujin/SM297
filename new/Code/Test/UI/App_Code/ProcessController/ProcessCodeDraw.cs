@@ -247,7 +247,12 @@ public class ProcessCodeDraw {
                 #region 虚拟订单
                 WebFramework.PrivacyDemand.PrivacyMethod.PrivacyInstance.AddFictitiousOrder(model);
                 #endregion
-
+                #region 发送自动作废短信
+                if (model.States == -1)
+                {
+                    WebFramework.GeneralMethodBase.GetMsg(2, model.Mob, model.OrderCode);
+                }
+                #endregion
                 orderSession.OrderKey = model.OrderCode;
                 SessionMethod.SessionInstance.SetSession(orderSession);
                 result.ErrMessage = "提交成功";

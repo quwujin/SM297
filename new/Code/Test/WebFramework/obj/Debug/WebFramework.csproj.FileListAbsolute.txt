@@ -80,8 +80,8 @@ E:\项目代码\士力架\new\Code\Test\WebFramework\bin\Debug\NPOI.OpenXml4Net.
 E:\项目代码\士力架\new\Code\Test\WebFramework\bin\Debug\Common.pdb
 E:\项目代码\士力架\new\Code\Test\WebFramework\bin\Debug\Db.pdb
 E:\项目代码\士力架\new\Code\Test\WebFramework\bin\Debug\Model.pdb
-E:\项目代码\士力架\new\Code\Test\WebFramework\obj\Debug\WebFramework.csprojResolveAssemblyReference.cache
 E:\项目代码\士力架\new\Code\Test\WebFramework\obj\Debug\WebFramework.csproj.CoreCompileInputs.cache
 E:\项目代码\士力架\new\Code\Test\WebFramework\obj\Debug\WebFramework.csproj.CopyComplete
 E:\项目代码\士力架\new\Code\Test\WebFramework\obj\Debug\WebFramework.dll
 E:\项目代码\士力架\new\Code\Test\WebFramework\obj\Debug\WebFramework.pdb
+E:\项目代码\士力架\new\Code\Test\WebFramework\obj\Debug\WebFramework.csprojAssemblyReference.cache

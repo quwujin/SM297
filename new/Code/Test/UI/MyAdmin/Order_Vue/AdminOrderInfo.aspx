@@ -247,6 +247,8 @@
                                                         <span v-if="item.States=='0'">未审核</span>
                                                         <span v-else-if="item.States=='1'"><span style='color:green'>已审核</span></span>
                                                         <span v-else-if="item.States=='5'">无法审核</span>
+                                                        <span v-else-if="item.States=='2'">未抽奖</span>
+                                                        <span v-else-if="item.States=='3'">二等奖未完善地址</span>
                                                         <span v-else ><span style='color:red'>作废</span></span>
                                                     </span>
                                                     <br />
@@ -317,6 +319,7 @@
                                                     <botton type="button"  v-bind:id="'successid'+item.Id" v-on:click="MessageBox('Success',item.Id)" class="btn  btn-success"  >
                                                         <i class='ace-icon fa fa-check'></i>审核通过
                                                     </botton><br>
+
                                                     <botton type="button" v-bind:id="'fail'+item.Id" v-on:click="MessageBox('Fail',item.Id)" class="btn  btn-danger" style='margin-top:10px;' >
                                                         <i class='ace-icon fa fa-trash-o'></i>作废订单
                                                     </botton><br>
@@ -408,7 +411,7 @@
                     { Key: "a.FilesId", Name: "小票", IsShow: true, disabled: false },
                     { Key: "a.States", Name: "状态", IsShow: true, disabled: false },
                     { Key: "a.Number", Name: "Number", IsShow: false, disabled: false },
-                    { Key: "a.Name", Name: "姓名", IsShow: false, disabled: false },
+                    { Key: "a.Name", Name: "姓名", IsShow: true, disabled: false },
                     { Key: "a.Mob", Name: "手机号", IsShow: true, disabled: false },
                     { Key: "a.CreateTime", Name: "创建时间", IsShow: true, disabled: false },
                     { Key: "a.Title", Name: "备注门店名称", IsShow: false, disabled: false },
@@ -423,13 +426,13 @@
                     { Key: "a.HbOrderCode", Name: "红包订单号", IsShow: false, disabled: false },
                     { Key: "a.Ip", Name: "IP", IsShow: false, disabled: false },
                     { Key: "a.Types", Name: "Types", IsShow: false, disabled: false },
-                    { Key: "a.Adds", Name: "地址", IsShow: false, disabled: false },
+                    { Key: "a.Adds", Name: "地址", IsShow: true, disabled: false },
                     { Key: "a.RedPackMoney", Name: "红包金额", IsShow: true, disabled: false },
                     { Key: "a.MobHome", Name: "手机号地归", IsShow: false, disabled: false },
                     { Key: "a.IpAddress", Name: "IP地归", IsShow: false, disabled: false },
-                    { Key: "a.Province", Name: "省", IsShow: false, disabled: false },
-                    { Key: "a.City", Name: "市", IsShow: false, disabled: false },
-                    { Key: "a.Area", Name: "区", IsShow: false, disabled: false },
+                    { Key: "a.Province", Name: "省", IsShow: true, disabled: false },
+                    { Key: "a.City", Name: "市", IsShow: true, disabled: false },
+                    { Key: "a.Area", Name: "区", IsShow: true, disabled: false },
                     { Key: "a.Sources", Name: "来源", IsShow: false, disabled: false },
                     { Key: "a.UpdateTime", Name: "修改时间", IsShow: true, disabled: false },
                     { Key: "a.Account", Name: "操作人", IsShow: true, disabled: false },
@@ -475,7 +478,7 @@
                     popoverVisible: false,//作废弹窗
                     popoverType:"",//弹窗显示类型
                     SuccessVal: [],
-                    FailVal: [],
+                    FailVal: ['时间不清楚','门店信息不清楚','流水号不清楚','产品信息不清楚'],
 
                 },
                 methods:{
@@ -562,7 +565,7 @@
                         vm.Parameter.GetType = val;
 
                         //当作废或通过操作需要选择时
-                        if ((val == "Success" || val == "Fail") && (vm.SuccessVal.length > 0 || vm.FailVal.length > 0)) {
+                        if (( val == "Fail") && (vm.SuccessVal.length > 0 || vm.FailVal.length > 0)) {
                             
                             //弹出泡泡框选择
                             vm.Popover(val);
