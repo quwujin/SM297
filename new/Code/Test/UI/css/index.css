@@ -409,7 +409,7 @@ div.boxindextitle p.pindextitleinfo span.spanindextitleinfo {
     position: relative;
 }
 .boxprize2 .divprize2gettop .shengshiqu .divinputtext::after {
-    content:"";
+    /*content:"";
     width:0;
     height:0;
     overflow:hidden;
@@ -420,7 +420,7 @@ div.boxindextitle p.pindextitleinfo span.spanindextitleinfo {
     position: absolute;
     z-index: 3;
     right: .1rem;
-    top: .24rem;
+    top: .24rem;*/
 }
 .boxprize2 .divprize2getbottom{
     margin-top: 1.04rem;

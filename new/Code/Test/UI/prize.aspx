@@ -73,11 +73,11 @@
                                     <input type="text" class="tac username" placeholder="姓名" /></div>
                                 <div class="shengshiqu m0a tac">
                                     <div class="divsheng divinputtext tac">
-                                        <input readonly="readonly" type="text" name="" id="" class="sheng tac province" placeholder="省" onfocus="this.blur()" /></div>
+                                        <input readonly="readonly" type="text" name="" id="" class="sheng tac province" placeholder="省" onfocus="this.blur()" style="text-overflow: ellipsis; width: 1.26rem"  /></div>
                                     <div class="divshi divinputtext tac ">
-                                        <input readonly="readonly" type="text" name="" id="" class="shi tac city" placeholder="市" onfocus="this.blur()" /></div>
+                                        <input readonly="readonly" type="text" name="" id="" class="shi tac city" placeholder="市" onfocus="this.blur()" style="text-overflow: ellipsis; width: 1.26rem"  /></div>
                                     <div class="divqu divinputtext tac ">
-                                        <input readonly="readonly" type="text" name="" id="" class="qu tac place" placeholder="区" onfocus="this.blur()" /></div>
+                                        <input readonly="readonly" type="text" name="" id="" class="qu tac place" placeholder="区" onfocus="this.blur()" style="text-overflow: ellipsis; width: 1.26rem"  /></div>
                                 </div>
                                 <div class="divinputtext m0a tac">
                                     <input type="text" class="tac saddress" placeholder="请输入详细地址" /></div>
